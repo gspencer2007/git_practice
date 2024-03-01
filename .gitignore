@@ -1,0 +1,15 @@
+# Windows OS file
+thumbs.db
+
+# macOS OS file
+.DS_Store
+
+# Virtual Studio Code folder
+.vscode/
+
+# My Notes
+notes/
+**/*-todo.md
+
+authentication.js
+node_modules
