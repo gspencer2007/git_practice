@@ -1,5 +1,4 @@
 # Git Practice
----
 
 ## Description
 
