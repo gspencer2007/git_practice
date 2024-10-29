@@ -1,3 +1,18 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography
+  3. Header & Navigation
+  4. Page Structure
+  5. Footer
+  6. Utilities
+  7. Media Queries
+======================================== */
+
+
+
+/* 1. Global Styles
+======================================== */
+
 html {
     box-sizing: border-box;
 }
@@ -12,19 +27,26 @@ img {
     max-width: 100%;
 }
 
-nav {
-    padding: 25px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #F25F5C;
-}
-  
+
+/* 2. Typography
+======================================== */
+
 h1 {
     float: left;
     margin-top: 5px;
     color: white;
     font-size: 36px;
 }
-  
+
+/* 3. Header & Navigation
+======================================== */
+
+nav {
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F25F5C;
+}
+
 ul {
     float: right;
 }
@@ -46,7 +68,20 @@ a {
     color: white;
     text-shadow: 2px 2px 0 #bbbbbb;
 }
-  
+
+/* 4. Page Structure
+======================================== */
+
+
+
+/* 5. Footer
+======================================== */
+
+
+
+/* 6. Utilities
+======================================== */
+
 .clearfix:after {
     content: " ";
     visibility: hidden;
@@ -54,15 +89,28 @@ a {
     height: 0;
     clear: both;
 }
-  
+
+/* .container {
+    text-align: center;
+    max-width: 980px;
+    min-width: 625px;
+    position: relative;
+    top: 120px;
+    padding-top: 120px;
+} */
+
+/* 7. Media Queries
+======================================== */
+
 @media only screen and (max-width: 800px) {
     h1 {
         display: none;
     }
+
     li {
         margin-right: 10px;
     }
-  
+    
     a {
         width: 100px;
         padding: 5px 0;
