@@ -33,7 +33,6 @@ img {
 
 h1 {
     float: left;
-    margin-top: 5px;
     color: white;
     font-size: 36px;
 }
@@ -41,10 +40,14 @@ h1 {
 /* 3. Header & Navigation
 ======================================== */
 
-nav {
-    padding: 25px;
+header {
     font-family: 'Roboto', sans-serif;
+    padding: 25px;
     background-color: #F25F5C;
+}
+
+nav {
+    float: right;
 }
 
 ul {
