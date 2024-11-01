@@ -16,34 +16,55 @@
 html {
     box-sizing: border-box;
 }
-  
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 img {
     max-width: 100%;
 }
+
+/* * {
+    border: 1px solid red;
+} */
 
 
 /* 2. Typography
 ======================================== */
 
-h1 {
-    float: left;
-    color: white;
-    font-size: 36px;
+h1, h2,
+h3, h4,
+h5, h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Lora', Georgia, serif;
 }
 
 /* 3. Header & Navigation
 ======================================== */
 
 header {
-    font-family: 'Roboto', sans-serif;
     padding: 25px;
     background-color: #F25F5C;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 36px;
 }
 
 nav {
@@ -51,12 +72,13 @@ nav {
 }
 
 ul {
-    float: right;
+    list-style-type: none;
+    margin: 0;
 }
   
 li {
     display: inline-block;
-    margin-right: 25px;
+    margin-left: 25px;
     text-align: center;
     background-color: #28587B; 
     border-radius: 5px;
