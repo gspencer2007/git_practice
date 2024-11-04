@@ -79,7 +79,6 @@ nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    /* align-items: space-between; */
 }
 
 /* nav li:first-child {
@@ -170,15 +169,6 @@ figcaption * {
     height: 0;
     clear: both;
 }
-
-/* .container {
-    text-align: center;
-    max-width: 980px;
-    min-width: 625px;
-    position: relative;
-    top: 120px;
-    padding-top: 120px;
-} */
 
 /* 7. Media Queries
 ======================================== */
