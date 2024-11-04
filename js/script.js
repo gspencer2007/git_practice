@@ -5,6 +5,8 @@ let newListItem = document.createElement('li');
 // new a link
 let newLink = document.createElement('a');
 newLink.innerHTML = 'Resume';
+newLink.setAttribute('href', 'https://www.youtube.com');
+newLink.setAttribute('target', '_black');
 // appending
 newListItem.appendChild(newLink);
 mainUl.appendChild(newListItem);
