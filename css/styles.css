@@ -8,10 +8,28 @@
   7. Media Queries
 ======================================== */
 
-
-
 /* 1. Global Styles
 ======================================== */
+
+/* 
+
+--NOTE--
+
+Remember, every element has a default margin and padding applied to them.
+Remove margin and padding from HTML tags to make them more consistent on multiple browsers.
+
+Use max-width on paragraphs to keep text readable
+@media (min-width: 58em) {
+	p {
+    max-width: 38em; | ~ 65-70 characters
+  }
+}
+
+Use https://responsivebreakpoints.com/ for responsive images.
+Learn more about responsive images at https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html
+
+*/
+
 
 html {
     box-sizing: border-box;
@@ -61,6 +79,8 @@ p {
 
 /* 3. Header & Navigation
 ======================================== */
+
+/* Alway display your links as block when inside nav */
 
 .header {
     background-color: #e9d8a6;
