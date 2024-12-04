@@ -1,0 +1,120 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography
+  3. Utilities
+  4. Media Queries
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --base-size: 1rem;
+  --scale: 1.2;
+  --heading-font: "Poppins", Arial, sans-serif;
+  --body-font: "Lora", Georgia, serif;
+  --h6: calc(var(--base-size) * var(--scale));
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--body-font);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* 2. Typography
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.022rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
+
+small,
+.text_small {
+  font-size: calc(var(--base-size) / var(--scale));
+}
+
+/* 3. Utilities
+======================================== */
+
+.wrapper {
+  margin: 1rem auto 0;
+  max-width: 1200px;
+}
+
+.container {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+/* 4. Media Queries
+======================================== */

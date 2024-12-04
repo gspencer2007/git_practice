@@ -31,90 +31,101 @@ Learn more about responsive images at https://css-tricks.com/a-guide-to-the-resp
 */
 
 :root {
-    --white: #FFFFFF;
-    --black: #000000;
-    --base-size: 1rem;
-    --scale: 1.25;
-    --h6: calc(var(--base-size) * var(--scale));
-    --h5: calc(var(--h6) * var(--scale));
-    --h4: calc(var(--h5) * var(--scale));
-    --h3: calc(var(--h4) * var(--scale));
-    --h2: calc(var(--h3) * var(--scale));
-    --h1: calc(var(--h2) * var(--scale));
+  --white: #ffffff;
+  --black: #000000;
+  --base-size: 1rem;
+  --scale: 1.2;
+  --heading-font: "Poppins", Arial, sans-serif;
+  --body-font: "Lora", Georgia, serif;
+  --h6: calc(var(--base-size) * var(--scale));
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Lora', Georgia, serif;
-    font-weight: 400;
-    line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  font-family: var(--body-font);
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* * {
     border: 1px solid red;
 } */
 
-
 /* 2. Typography
 ======================================== */
 
-h1, h2, h3,
-h4, h5, h6 {
-    margin: 3rem 0 1.38rem;
-    font-family: 'Poppins', Arial, sans-serif;
-    font-weight: 400;
-    line-height: 1.15;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.022rem;
 }
 
 h1 {
-    margin-top: 0;
-    font-size: var(--h1);
+  margin-top: 0;
+  font-size: var(--h1);
 }
 
 h2 {
-    font-size: var(--h2);
+  font-size: var(--h2);
 }
 
 h3 {
-    font-size: var(--h3);
+  font-size: var(--h3);
 }
 
 h4 {
-    font-size: var(--h4);
+  font-size: var(--h4);
 }
 
 h5 {
-    font-size: var(--h5);
+  font-size: var(--h5);
 }
 
 h6 {
-    font-size: var(--h6);
+  font-size: var(--h6);
+}
+
+small,
+.text_small {
+  font-size: calc(var(--base-size) / var(--scale));
 }
 
 /* 3. Header & Navigation
@@ -123,16 +134,17 @@ h6 {
 /* Alway display your links as block when inside nav */
 
 .header {
-    background-color: #e9d8a6;
+  background-color: #e9d8a6;
+  min-width: 320px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 /* nav li:first-child {
@@ -140,106 +152,106 @@ nav ul {
 } */
 
 nav li {
-    flex-basis: 48%;
-    margin-bottom: 0.5rem;
-    font-family: 'Poppins', Arial, sans-serif;
+  flex-basis: 48%;
+  margin-bottom: 0.5rem;
+  font-family: var(--heading-font);
+  font-weight: 400;
 }
 
 nav li:first-child {
-    flex-basis: 100%;
-    text-align: center;
+  flex-basis: 100%;
+  text-align: center;
 }
 
 nav a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    background-color: red;
-    display: block;
-    padding: 0.5rem;
-    border-radius: 5px;
-    text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  background-color: red;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
 }
 
 nav li:first-child a {
-    color: black;
-    background-color: transparent;
+  color: black;
+  background-color: transparent;
 }
 
 nav a:hover {
-    background-color: black;
-    color: #e9d8a6;
+  background-color: black;
+  color: #e9d8a6;
 }
 
 /* 4. Page Structure
 ======================================== */
 
 .wrapper {
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 .row {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 figure {
-    position: relative;
+  position: relative;
 }
 
 figure + figure {
-    margin-top: 0.75rem;
+  margin-top: 0.75rem;
 }
 
 figure > div {
-    background-image: url('data:image/svg+xml,%3Csvg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z" fill="%239C92AC" fill-opacity="0.4" fill-rule="evenodd"/%3E%3C/svg%3E');
-    min-height: 250px;
+  background-image: url('data:image/svg+xml,%3Csvg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z" fill="%239C92AC" fill-opacity="0.4" fill-rule="evenodd"/%3E%3C/svg%3E');
+  min-height: 250px;
 }
 
 figcaption {
-    background-color: #00121970; /* Added Transparency - 70 */
-    color: white;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
+  background-color: #00121970; /* Added Transparency - 70 */
+  color: white;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
 }
 
 figcaption * {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 figcaption h2 {
-    font-size: var(--h5);
+  font-size: var(--h5);
 }
 
 .one {
-    background-color: #005f73;
+  background-color: #005f73;
 }
 
 .two {
-    background-color: #9b2226;
+  background-color: #9b2226;
 }
 
 .three {
-    background-color: #ee9b00;
+  background-color: #ee9b00;
 }
 
 /* 5. Footer
 ======================================== */
 
-
-
 /* 6. Utilities
 ======================================== */
 
 .clearfix:after {
-    content: " ";
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both;
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 /* 7. Media Queries
@@ -248,71 +260,71 @@ figcaption h2 {
 /* Tablet */
 
 @media only screen and (min-width: 550px) {
-    /* Navigation */
+  /* Navigation */
 
-    nav ul {
-        justify-content: center;
-        gap: 1.2em;
-    }
+  nav ul {
+    justify-content: center;
+    gap: 1.2em;
+  }
 
-    nav li {
-        flex-basis: auto;
-        margin-bottom: 0;
-    }
+  nav li {
+    flex-basis: auto;
+    margin-bottom: 0;
+  }
 
-    nav a {
-        color: black;
-        background-color: transparent;
-    }
+  nav a {
+    color: black;
+    background-color: transparent;
+  }
 
-    .row {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 2%;
-    }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
+  }
 
-    figure + figure {
-        margin-top: 0;
-    }
+  figure + figure {
+    margin-top: 0;
+  }
 
-    .main-fig {
-        grid-column: span 2;
-    }
+  .main-fig {
+    grid-column: span 2;
+  }
 }
 
 /* Desktop */
 
 @media only screen and (min-width: 800px) {
-    /* Navigation - logo in the  center */
+  /* Navigation - logo in the  center */
 
-    nav ul {
-        justify-content: flex-end;
-    }
+  nav ul {
+    justify-content: flex-end;
+  }
 
-    nav li:first-child {
-        flex-basis: auto;
-        margin: 0 auto;
-        order: 2;
-    }
+  nav li:first-child {
+    flex-basis: auto;
+    margin: 0 auto;
+    order: 2;
+  }
 
-    nav li:nth-child(2),
-    nav li:nth-child(3) {
-        order: 1;
-    }
+  nav li:nth-child(2),
+  nav li:nth-child(3) {
+    order: 1;
+  }
 
-    nav li:nth-child(4),
-    nav li:nth-child(5) {
-        order: 3;
-    }
+  nav li:nth-child(4),
+  nav li:nth-child(5) {
+    order: 3;
+  }
 
-    .row {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        gap: 1.25%;
-    }
+  .row {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1.25%;
+  }
 
-    .main-fig {
-        grid-column: span 1;
-    }
+  .main-fig {
+    grid-column: span 1;
+  }
 }
