@@ -1,8 +1,9 @@
 /* Site Stylesheet
   1. Global Styles
   2. Typography
-  3. Utilities
-  4. Media Queries
+  3. Colors
+  4. Utilities
+  5. Media Queries
 ======================================== */
 
 /* 1. Global Styles
@@ -11,6 +12,7 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --gray: #a2a2a6;
   --base-size: 1rem;
   --scale: 1.2;
   --heading-font: "Poppins", Arial, sans-serif;
@@ -102,19 +104,42 @@ small,
   font-size: calc(var(--base-size) / var(--scale));
 }
 
-/* 3. Utilities
+/* 3. Colors
+======================================== */
+
+.colors {
+  display: flex;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-flow: row wrap;
+  gap: 1rem 2%;
+}
+
+.colors > * {
+  flex-basis: 32%;
+  text-align: center;
+  border: 1px solid var(--gray);
+}
+
+/* 4. Utilities
 ======================================== */
 
 .wrapper {
   margin: 1rem auto 0;
-  max-width: 1200px;
+  max-width: 75rem;
+  min-width: 20rem;
 }
 
 .container {
   margin-bottom: 1rem;
   padding: 1rem;
-  border: 2px solid black;
+  border: 2px solid var(--gray);
 }
 
-/* 4. Media Queries
+.container h2 {
+  margin-top: 0;
+  font-size: var(--h4);
+}
+
+/* 5. Media Queries
 ======================================== */
