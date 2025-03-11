@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <!-- <script src="js/script.js" defer></script> -->
   </head>
 
@@ -17,75 +18,119 @@
       <header class="wrapper">
         <nav role="navigation">
           <ul>
-            <li><a href="styleguide.html">Logo</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">GS</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
     </div>
     <main>
       <div class="wrapper">
-        <!-- Add hero banner here -->
+        <div class="hero">
+          <div class="hero-txt">
+            <h1>Your digital transformation begins here</h1>
+            <p>Unlock the full potential of your business. Start your journey today and experience the future of business software.</p>
+            <a href="#services" class="button">Services</a> <a href="#" class="button hollow">Resume</a>
+            <p>No credit card required</p>
+          </div>
+          <div class="hero-img"></div>
+        </div>
         <!-- <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="Icecream cone man dancing"> -->
-        <h1>Projects</h1>
-        <div class="row">
-          <figure class="main-fig">
+        <h1 id="projects">Projects I'm proud of</h1>
+        <div class="projects">
+          <figure class="pro-1">
             <div class="one"></div>
             <figcaption>
               <h2>Title 1</h2>
               <p>Description</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="pro-2">
             <div class="two"></div>
             <figcaption>
               <h2>Title 2</h2>
               <p>Description</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="pro-3">
             <div class="three"></div>
             <figcaption>
               <h2>Title 3</h2>
               <p>Description</p>
             </figcaption>
           </figure>
+          <figure class="pro-4">
+            <div class="four"></div>
+            <figcaption>
+              <h2>Title 4</h2>
+              <p>Description</p>
+            </figcaption>
+          </figure>
         </div>
-        <h1>About</h1>
-        <h1>Services</h1>
-        <h1>Contact</h1>
-        <form action="" method="POST">
-          <label for="cilent">Name:</label>
-          <br />
-          <input type="text" name="cilent" id="cilent" required />
-          <br />
-          <label for="email">Email:</label>
-          <br />
-          <input type="text" name="email" id="email" required />
-          <br />
-          <label for="phone">Phone:</label>
-          <br />
-          <input type="text" name="phone" id="phone" required />
-          <br />
-          <label for="service">What's this regarding:</label>
-          <br />
-          <select id="service" name="service" required>
-            <option value=""></option>
-            <option value="logo">Logo Design</option>
-            <option value="illustration">Illustrations</option>
-            <option value="poster">Poster Design</option>
-            <option value="ux">UX & UI Design</option>
-          </select>
-          <br />
-          <label for="message">Message:</label>
-          <br />
-          <textarea id="message" name="message" row="5" cols="30"></textarea>
-          <br />
-          <input type="submit" value="Send" />
-        </form>
+        <a href="#" class="button">More Work</a>
+        <div class="divider"></div>
+        <h1 id="about">Get To Know Me</h1>
+        <div class="about">
+          <div class="about-img"></div>
+          <div class="about-txt">
+            <h2>Just the highlights</h2>
+            <p>
+              Geoffrey Spencer is a talented artist from Hyattsville, Maryland. During his studies, Geoffrey has improved his design skills and knowledge of the Adobe Creative Suite. He excels in
+              Illustrator, InDesign, and Photoshop. Presently, he is developing his expertise in web development to complement his understanding of design.
+            </p>
+            <a href="#" class="button hollow">Resume</a>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <h1 id="services">What I Offer</h1>
+        <div class="services">
+          <div class="branding">
+            <h2>Branding</h2>
+            <div class="icon"><span class="fa-solid fa-file-pen" aria-hidden="true"></span><span class="sr-only">Branding</span></div>
+            <ul>
+              <li>Logo & Identity</li>
+              <li>Style Guide</li>
+              <li>Art Direction</li>
+              <li>Design Research</li>
+            </ul>
+            <p>
+              Building a brand visually always starts with a logo. When collaborating together we'll hone in on a concept that is both eye-catching and represents the brand's value and purpose. I can
+              provide services from logo design, to a full identity system, which entails typography styles, colour palettes, brand elements, photography, etc. Along with developing application rules
+              to how the identity would live in a physical and digital environment.
+            </p>
+          </div>
+          <div class="art">
+            <h2>Illustrations</h2>
+            <div class="icon"><span class="fa-solid fa-paintbrush" aria-hidden="true"></span><span class="sr-only">Illustrations</span></div>
+            <ul>
+              <li>Editorial Illustrations</li>
+              <li>Character Design</li>
+            </ul>
+            <p>
+              From vector to raster illustration styles, I have the skills to produce a series of illustrations that have a very stand out and permanent use, such as book illustrations, packaging
+              design, and poster art. I develop illustrations and iconography sets that would serve as visual communication for a brand.
+            </p>
+          </div>
+          <div class="website">
+            <h2>Website Design</h2>
+            <div class="icon"><span class="fa-solid fa-code" aria-hidden="true"></span><span class="sr-only">Web Design</span></div>
+            <ul>
+              <li>Wireframing</li>
+              <li>UI & UX Design</li>
+              <li>Prototyping</li>
+              <li>Development</li>
+            </ul>
+            <p>
+              If you are looking for a new website with a brand roll out, or need a refresher for your current website, I have experience working with custom website builders such as Webflow, and/or
+              could provide design and set up sites, such as Shopify, SquareSpace or Wix.
+            </p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <h1 id="contact">Contact</h1>
       </div>
     </main>
   </body>
