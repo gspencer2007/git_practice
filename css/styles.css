@@ -129,6 +129,10 @@ small,
   font-size: calc(var(--base-size) / var(--scale));
 }
 
+p {
+  max-width: 38rem; /* ~ 65-70 characters */
+}
+
 /* 3. Header & Navigation
 ======================================== */
 
