@@ -130,7 +130,7 @@ small,
 }
 
 p {
-  max-width: 38rem; /* ~ 65-70 characters */
+  max-width: 38rem;
 }
 
 /* 3. Header & Navigation
@@ -224,6 +224,13 @@ nav a {
   color: var(--white);
   font-size: 1rem;
   line-height: 1.5;
+  & a {
+    color: var(--white);
+    text-decoration-style: wavy;
+    &:hover {
+      color: var(--aqua);
+    }
+  }
 }
 
 #projects ul {
@@ -404,12 +411,12 @@ footer ul {
   }
 
   #projects img {
-    grid-column: 1/5;
+    grid-column: 1/6;
     grid-row: 1/2;
   }
 
   #projects .text {
-    grid-column: 4/9;
+    grid-column: 5/9;
     grid-row: 1/2;
   }
 
@@ -423,14 +430,14 @@ footer ul {
   }
 
   #projects .reverse .text {
-    grid-column: 1/6;
+    grid-column: 1/5;
     grid-row: 1/2;
     order: 2;
     text-align: left;
   }
 
   #projects .reverse img {
-    grid-column: 5/9;
+    grid-column: 4/9;
     grid-row: 1/2;
     border-left: none;
     border-right: 1px solid var(--aqua);
