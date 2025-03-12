@@ -6,7 +6,6 @@
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -29,108 +28,153 @@
     </div>
     <main>
       <div class="wrapper">
-        <div class="hero">
+        <section class="hero">
           <div class="hero-txt">
-            <h1>Your digital transformation begins here</h1>
-            <p>Unlock the full potential of your business. Start your journey today and experience the future of business software.</p>
-            <a href="#services" class="button">Services</a> <a href="#" class="button hollow">Resume</a>
-            <p>No credit card required</p>
+            <h1>Creative Dreamer</h1>
+            <p>I'm not a run-of-the-mill designer. I build worlds.</p>
+            <a href="#services" class="button">Services</a> <a href="docs/GS_CV_2024.pdf" class="button hollow" target="_blank" download>Resume</a>
           </div>
-          <div class="hero-img"></div>
-        </div>
-        <!-- <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="Icecream cone man dancing"> -->
-        <h1 id="projects">Projects I'm proud of</h1>
-        <div class="projects">
-          <figure class="pro-1">
-            <div class="one"></div>
-            <figcaption>
-              <h2>Title 1</h2>
-              <p>Description</p>
-            </figcaption>
-          </figure>
-          <figure class="pro-2">
-            <div class="two"></div>
-            <figcaption>
-              <h2>Title 2</h2>
-              <p>Description</p>
-            </figcaption>
-          </figure>
-          <figure class="pro-3">
-            <div class="three"></div>
-            <figcaption>
-              <h2>Title 3</h2>
-              <p>Description</p>
-            </figcaption>
-          </figure>
-          <figure class="pro-4">
-            <div class="four"></div>
-            <figcaption>
-              <h2>Title 4</h2>
-              <p>Description</p>
-            </figcaption>
-          </figure>
-        </div>
-        <a href="#" class="button">More Work</a>
+        </section>
+        <section id="projects">
+          <h1>Projects I'm proud of</h1>
+          <article>
+            <div class="text">
+              <h3>Latest Project</h3>
+              <h2>Jared Journey</h2>
+              <p class="blackbox">
+                This is a responsive <a href="demo/demo.html">demo</a> website I created of a fictional character named Jared. He loves showcasing his photography on his blog. Exploring the world, one
+                snap at a time. His work is constantly displayed in publications. If you need a photographer, he is your guy.
+              </p>
+              <h3>Technologies used include:</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <img src="img/demo_thumb.jpg" alt="Image of demo site" />
+          </article>
+          <article class="reverse">
+            <div class="text">
+              <h2>Shades</h2>
+              <p class="blackbox">
+                This is a <a href="https://www.behance.net/gallery/200578507/Shades" target="_blank">creative illustration</a> of a photo of my friend of many years. I took this photo a while back. He
+                is such a character. This is one of the neatest photos I have taken as I dip my toes into photography.
+              </p>
+              <h3>Technologies used include:</h3>
+              <ul>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+            <img src="img/john_thumb.jpg" alt="Picture of my friend" />
+          </article>
+          <article>
+            <div class="text">
+              <h2>Goodbye Aunt Jackie</h2>
+              <p class="blackbox">
+                I designed the <a href="docs/Jackie_Program.pdf" target="_blank" download>obituary</a> for Aunt Jackie's passing. She was not my real aunt; it was what everyone called her. Aunt Jackie
+                used to drop her nephew, my best friend, and me off to school. She had a funny personality and was a caring person. She was loved by many. Rest in peace, Aunt Jackie, we miss you.
+              </p>
+              <h3>Technologies used include:</h3>
+              <ul>
+                <li>InDesign</li>
+              </ul>
+            </div>
+            <img src="img/jackie_thumb.jpg" alt="Jacqueline Commodore" />
+          </article>
+          <article class="reverse">
+            <div class="text">
+              <h2>Tokyo Punk</h2>
+              <p class="blackbox">
+                This is me experimenting with typography and textures. I call it <a href="https://www.behance.net/gallery/200616149/Tokyo-Punk" target="_black">Tokyo Punk</a>. Tokyo is spray-painted
+                white on black leather with a splash of red underlining the word. This piece gives off the vibe that whoever spray-painted Tokyo over this piece of leather didn't care.
+              </p>
+              <h3>Technologies used include:</h3>
+              <ul>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+            <img src="img/jp_thumb.jpg" alt="Tokyo in grunge" />
+          </article>
+        </section>
         <div class="divider"></div>
-        <h1 id="about">Get To Know Me</h1>
-        <div class="about">
-          <div class="about-img"></div>
-          <div class="about-txt">
-            <h2>Just the highlights</h2>
-            <p>
-              Geoffrey Spencer is a talented artist from Hyattsville, Maryland. During his studies, Geoffrey has improved his design skills and knowledge of the Adobe Creative Suite. He excels in
-              Illustrator, InDesign, and Photoshop. Presently, he is developing his expertise in web development to complement his understanding of design.
-            </p>
-            <a href="#" class="button hollow">Resume</a>
+        <section id="about">
+          <h1>Get to know me</h1>
+          <div class="about">
+            <img class="about-img" src="img/me_thumb.jpg" alt="Picture of myself" />
+            <div class="about-txt">
+              <h2>Just the highlights</h2>
+              <p>
+                Geoffrey Spencer is a talented artist from Hyattsville, Maryland. During his studies, Geoffrey has improved his design skills and knowledge of the Adobe Creative Suite. He excels in
+                Illustrator, InDesign, and Photoshop. Presently, he is developing his expertise in web development to complement his understanding of design.
+              </p>
+              <a href="docs/GS_CV_2024.pdf" class="button" target="_blank" download>Resume</a>
+            </div>
           </div>
-        </div>
+        </section>
         <div class="divider"></div>
-        <h1 id="services">What I Offer</h1>
-        <div class="services">
-          <div class="branding">
-            <h2>Branding</h2>
-            <div class="icon"><span class="fa-solid fa-file-pen" aria-hidden="true"></span><span class="sr-only">Branding</span></div>
-            <ul>
-              <li>Logo & Identity</li>
-              <li>Style Guide</li>
-              <li>Art Direction</li>
-              <li>Design Research</li>
-            </ul>
-            <p>
-              Building a brand visually always starts with a logo. When collaborating together we'll hone in on a concept that is both eye-catching and represents the brand's value and purpose. I can
-              provide services from logo design, to a full identity system, which entails typography styles, colour palettes, brand elements, photography, etc. Along with developing application rules
-              to how the identity would live in a physical and digital environment.
-            </p>
+        <section id="services">
+          <h1>What I offer</h1>
+          <div class="skills">
+            <div class="service branding">
+              <h2>Branding</h2>
+              <div class="icon"><span class="fa-solid fa-file-pen" aria-hidden="true"></span><span class="sr-only">Branding</span></div>
+              <ul>
+                <li>Logo & Identity</li>
+                <li>Style Guide</li>
+                <li>Art Direction</li>
+                <li>Design Research</li>
+              </ul>
+              <p>Building a brand visually always starts with a logo. When collaborating together we'll hone in on a concept that is both eye-catching and represents the brand's value and purpose.</p>
+            </div>
+            <div class="service art">
+              <h2>Illustrations</h2>
+              <div class="icon"><span class="fa-solid fa-paintbrush" aria-hidden="true"></span><span class="sr-only">Illustrations</span></div>
+              <ul>
+                <li>Editorial Illustrations</li>
+                <li>Character Design</li>
+              </ul>
+              <p>
+                From vector to raster illustration styles, I have the skills to produce a series of illustrations that have a very stand out and permanent use, such as book illustrations and poster
+                art.
+              </p>
+            </div>
+            <div class="service website">
+              <h2>Website Design</h2>
+              <div class="icon"><span class="fa-solid fa-code" aria-hidden="true"></span><span class="sr-only">Web Design</span></div>
+              <ul>
+                <li>Wireframing</li>
+                <li>UI & UX Design</li>
+                <li>Prototyping</li>
+                <li>Development</li>
+              </ul>
+              <p>If you are looking for a new website with a brand roll out, or need a refresher for your current website, I have experience in frontend web development.</p>
+            </div>
           </div>
-          <div class="art">
-            <h2>Illustrations</h2>
-            <div class="icon"><span class="fa-solid fa-paintbrush" aria-hidden="true"></span><span class="sr-only">Illustrations</span></div>
-            <ul>
-              <li>Editorial Illustrations</li>
-              <li>Character Design</li>
-            </ul>
-            <p>
-              From vector to raster illustration styles, I have the skills to produce a series of illustrations that have a very stand out and permanent use, such as book illustrations, packaging
-              design, and poster art. I develop illustrations and iconography sets that would serve as visual communication for a brand.
-            </p>
-          </div>
-          <div class="website">
-            <h2>Website Design</h2>
-            <div class="icon"><span class="fa-solid fa-code" aria-hidden="true"></span><span class="sr-only">Web Design</span></div>
-            <ul>
-              <li>Wireframing</li>
-              <li>UI & UX Design</li>
-              <li>Prototyping</li>
-              <li>Development</li>
-            </ul>
-            <p>
-              If you are looking for a new website with a brand roll out, or need a refresher for your current website, I have experience working with custom website builders such as Webflow, and/or
-              could provide design and set up sites, such as Shopify, SquareSpace or Wix.
-            </p>
-          </div>
-        </div>
+        </section>
         <div class="divider"></div>
-        <h1 id="contact">Contact</h1>
+        <section id="contact">
+          <h1>Contact me</h1>
+          <p>I'm always interested in hearing about your vision of how you want your site to look like.</p>
+          <p><a href="mailto:gspencer2007@gmail.com" class="button">Email me</a></p>
+        </section>
+        <div class="divider"></div>
+        <footer id="footer">
+          <h2>Geoffrey Spencer &middot; Designer</h2>
+          <ul>
+            <!-- <li>
+              <a href="#" target="_blank">
+                <span class="fa-brands fa-linkedin" aria-hidden="true"></span><span class="sr-only">LinkedIn</span>
+              </a>
+            </li> -->
+            <li>
+              <a href="https://github.com/gspencer2007" target="_blank"> <span class="fa-brands fa-github" aria-hidden="true"></span><span class="sr-only">Github</span></a>
+            </li>
+            <li>
+              <a href="mailto:gspencer2007@gmail.com"> <span class="fa-solid fa-envelope"></span><span class="sr-only">Email</span></a>
+            </li>
+          </ul>
+          <p><small>&copy; 2024 Geoffrey Spencer. All rights reserved.</small></p>
+        </footer>
       </div>
     </main>
   </body>

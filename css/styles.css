@@ -33,6 +33,7 @@ Learn more about responsive images at https://css-tricks.com/a-guide-to-the-resp
 :root {
   --white: #ffffff;
   --black: #000000;
+  --aqua: #86fbfb;
   --base-size: 1rem;
   --scale: 1.2;
   --heading-font: "Poppins", Arial, sans-serif;
@@ -174,7 +175,7 @@ nav a {
   background-color: red;
   display: block;
   padding: 0.5rem;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   text-align: center;
   &:hover {
     background-color: black;
@@ -183,6 +184,138 @@ nav a {
 }
 
 /* 4. Page Structure
+======================================== */
+
+.hero {
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.hero h1,
+.hero .button {
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+/*  Projects 
+---------------*/
+
+#projects h2 {
+  font-size: var(--h4);
+}
+
+#projects h3 {
+  font-size: var(--h6);
+  /* color: var(--aqua); */
+}
+
+.blackbox {
+  background: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+#projects img {
+  margin: 2rem 0 4rem 0;
+  border-left: 1px solid var(--aqua);
+  border-top: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+/*  About
+---------------*/
+
+.about-img {
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/*  Services
+---------------*/
+
+#services h1,
+#services h2 {
+  text-align: center;
+}
+
+.icon [class*="fa-"] {
+  width: 100%;
+  text-align: center;
+  font-size: var(--h2);
+  margin-bottom: 1.5rem;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  margin-bottom: 1.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.service ul {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  list-style-type: circle;
+}
+
+.service li {
+  margin-right: 1.5rem;
+}
+
+/*  Contact
+---------------*/
+
+#contact {
+  min-width: 320px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 5. Footer
+======================================== */
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  margin: 2rem 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: var(--h2);
+}
+
+/* 6. Utilities
 ======================================== */
 
 .wrapper {
@@ -201,94 +334,20 @@ nav a {
   color: var(--black);
   font-weight: 500;
   background-color: lightgray;
-  width: 168px;
-  height: 48px;
-  border-radius: 8px;
-  padding-top: 0.6rem;
+  width: calc(1.5rem * 7);
+  height: calc(1.5rem * 2);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  @media only screen and (max-width: 549px) {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .hollow {
   background-color: var(--white);
   border: 1px solid var(--black);
 }
-
-.divider {
-  background-color: var(--black);
-  height: 4px;
-  margin: 2rem 0;
-}
-
-.projects {
-  margin-bottom: 2rem;
-}
-
-figure {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-/* figure + figure {
-  margin-top: 1.5rem;
-} */
-
-figure > div {
-  background-image: url('data:image/svg+xml,%3Csvg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z" fill="%239C92AC" fill-opacity="0.4" fill-rule="evenodd"/%3E%3C/svg%3E');
-  min-height: 264px;
-}
-
-figcaption {
-  background-color: #00121970; /* Added Transparency - 70 */
-  color: white;
-  padding: 1rem;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-}
-
-figcaption * {
-  margin: 0.5rem;
-}
-
-figcaption h2 {
-  font-size: var(--h5);
-}
-
-.one {
-  background-color: #005f73;
-}
-
-.two {
-  background-color: #9b2226;
-}
-
-.three {
-  background-color: #ee9b00;
-}
-
-.four {
-  background-color: #ee9b00;
-}
-
-#contact {
-  text-align: center;
-}
-
-.services h2 {
-  text-align: center;
-}
-
-.icon [class*="fa-"] {
-  width: 100%;
-  text-align: center;
-  font-size: var(--h2);
-}
-
-/* 5. Footer
-======================================== */
-
-/* 6. Utilities
-======================================== */
 
 .clearfix:after {
   content: " ";
@@ -298,10 +357,17 @@ figcaption h2 {
   clear: both;
 }
 
+.divider {
+  background-color: var(--black);
+  height: 4px;
+  margin: 3rem 0;
+}
+
 /* 7. Media Queries
 ======================================== */
 
-/* Tablet */
+/*  Tablet
+---------------*/
 
 @media only screen and (min-width: 550px) {
   /* Navigation */
@@ -321,23 +387,81 @@ figcaption h2 {
     background-color: transparent;
   }
 
-  /* .row {
+  .button + .button {
+    margin-left: 1.5rem;
+  }
+
+  /* Projects */
+
+  article {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1rem;
+  }
+
+  #projects img {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+
+  #projects .text {
+    grid-column: 4/9;
+    grid-row: 1/2;
+  }
+
+  .text {
+    order: 2;
+    text-align: right;
+  }
+
+  #projects ul {
+    justify-content: flex-end;
+  }
+
+  #projects .reverse .text {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    order: 2;
+    text-align: left;
+  }
+
+  #projects .reverse img {
+    grid-column: 5/9;
+    grid-row: 1/2;
+    border-left: none;
+    border-right: 1px solid var(--aqua);
+  }
+
+  #projects .reverse ul {
+    justify-content: flex-start;
+  }
+
+  /* About */
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 2%;
+    gap: 1.5rem;
   }
 
-  figure + figure {
-    margin-top: 0;
+  .about-img {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    margin-bottom: 0;
   }
 
-  .main-fig {
-    grid-column: span 2;
-  } */
+  .about-txt {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+  }
+
+  /* Services */
 }
 
-/* Desktop */
+/*  Desktop
+---------------*/
 
 @media only screen and (min-width: 800px) {
   /* Navigation - logo in the  center */
@@ -362,89 +486,15 @@ figcaption h2 {
     order: 3;
   }
 
-  .hero {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin: 4rem 0;
-  }
-
-  .hero h1 {
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-txt {
-    grid-column: span 6 / span 6;
-    grid-row: span 3 / span 3;
-  }
-
-  .hero-txt h1 {
-    width: 90%;
-    margin-top: 1rem;
-  }
-
-  .hero-img {
-    grid-column: span 6 / span 6;
-    grid-row: span 3 / span 3;
-    grid-column-start: 7;
-    background-color: lightgray;
-  }
-
-  .button + .button {
-    margin-left: 1.5rem;
-  }
-
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    gap: 1.5rem;
-  }
-
-  .pro-1 {
-    grid-column: span 3 / span 3;
-  }
-
-  .pro-2 {
-    grid-column: span 3 / span 3;
-    grid-column-start: 4;
-  }
-
-  .pro-3 {
-    grid-column: span 3 / span 3;
-    grid-column-start: 7;
-  }
-
-  .pro-4 {
-    grid-column: span 3 / span 3;
-    grid-column-start: 10;
-  }
-
-  .about {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  .about-img {
-    grid-column: span 6 / span 6;
-    grid-row: span 3 / span 3;
-    background-color: lightgray;
-  }
-
-  .about-txt {
-    grid-column: span 6 / span 6;
-    grid-row: span 2 / span 2;
-    grid-column-start: 7;
-  }
-
-  .services {
+  .skills {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+
+  .service {
+    margin-bottom: 0;
   }
 
   .branding {
