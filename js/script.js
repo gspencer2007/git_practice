@@ -1,32 +1,5 @@
-let mainNav = document.getElementsByTagName('nav')[0];
-let mainUl = document.getElementsByTagName('ul')[0];
-// new li
-let newListItem = document.createElement('li');
-// new a link
-let newLink = document.createElement('a');
-newLink.innerHTML = 'Resume';
-newLink.setAttribute('href', 'https://www.youtube.com');
-newLink.setAttribute('target', '_black');
-// appending
-newListItem.appendChild(newLink);
-mainUl.appendChild(newListItem);
-mainNav.appendChild(mainUl);
+let copyright = document.getElementsByClassName('copyright')[0];
 
-let allLinks = document.querySelectorAll('a');
+const thisYear = new Date();
 
-
-for(let i=0; i < allLinks.length; i++){
-    //console.log(allLinks[i]);
-    allLinks[i].addEventListener('mouseover', function(){
-        allLinks[i].style.color = '#28587B';
-    });
-    allLinks[i].addEventListener('mouseout', function(){
-        allLinks[i].style.color = 'white';
-    });
-    allLinks[i].parentNode.addEventListener('mouseover', function(){
-        allLinks[i].parentNode.style.backgroundColor = 'pink';
-    })
-    allLinks[i].parentNode.addEventListener('mouseout', function(){
-        allLinks[i].parentNode.style.backgroundColor = '#28587B';
-    })
-}
+copyright.innerHTML = '&copy; ' + thisYear.getFullYear() + ' Geoffrey Spencer. All rights reserved.';

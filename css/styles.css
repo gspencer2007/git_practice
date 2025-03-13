@@ -159,10 +159,6 @@ nav li {
   font-weight: 400;
 }
 
-/* nav li:first-child {
-    margin-right: auto;
-} */
-
 nav li:first-child {
   flex-basis: 100%;
   text-align: center;
@@ -175,14 +171,14 @@ nav li:first-child {
 nav a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: white;
+  color: var(--white);
   background-color: red;
   display: block;
   padding: 0.5rem;
   border-radius: 0.5rem;
   text-align: center;
   &:hover {
-    background-color: black;
+    background-color: var(--black);
     color: #e9d8a6;
   }
 }
@@ -190,19 +186,19 @@ nav a {
 /* 4. Page Structure
 ======================================== */
 
+/*  Hero 
+---------------*/
+
 .hero {
   margin: 4rem auto;
-  text-align: center;
 }
 
-.hero h1,
-.hero .button {
+.hero h1 {
   margin-bottom: 1.5rem;
 }
 
 .hero p {
   margin: 0 auto 1.5rem;
-  text-align: center;
 }
 
 /*  Projects 
@@ -214,7 +210,6 @@ nav a {
 
 #projects h3 {
   font-size: var(--h6);
-  /* color: var(--aqua); */
 }
 
 .blackbox {
@@ -296,21 +291,12 @@ nav a {
   margin-right: 1.5rem;
 }
 
-/*  Contact
----------------*/
-
-#contact {
-  min-width: 320px;
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 /* 5. Footer
 ======================================== */
 
 footer {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 footer ul {
@@ -326,14 +312,30 @@ footer ul {
   font-size: var(--h2);
 }
 
+footer a {
+  color: var(--black);
+}
+
+footer p {
+  max-width: 100%;
+}
+
 /* 6. Utilities
 ======================================== */
 
 .wrapper {
   max-width: 73.5rem; /* 1176px */
-  min-width: 20rem;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 1.5rem; /* 24px */
+}
+
+.mini-wrap {
+  min-width: 320px;
+  max-width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1.5rem;
 }
 
 .button {
@@ -349,15 +351,16 @@ footer ul {
   height: calc(1.5rem * 2);
   border-radius: 0.5rem;
   padding: 0.5rem 0;
-  @media only screen and (max-width: 549px) {
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 .hollow {
   background-color: var(--white);
   border: 1px solid var(--black);
+}
+
+.button.resume {
+  display: block;
+  margin: 1.5rem auto 0;
 }
 
 .clearfix:after {
@@ -398,7 +401,18 @@ footer ul {
     background-color: transparent;
   }
 
+  /* Hero */
+
+  .hero .button {
+    display: inline-block;
+    margin: 0;
+  }
+
   .button + .button {
+    margin-top: 0;
+  }
+
+  .hero .resume {
     margin-left: 1.5rem;
   }
 
@@ -446,29 +460,6 @@ footer ul {
   #projects .reverse ul {
     justify-content: flex-start;
   }
-
-  /* About */
-
-  .about {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-
-  .about-img {
-    grid-column: span 4 / span 4;
-    grid-row: span 2 / span 2;
-    margin-bottom: 0;
-  }
-
-  .about-txt {
-    grid-column: span 4 / span 4;
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-  }
-
-  /* Services */
 }
 
 /*  Desktop
@@ -496,6 +487,36 @@ footer ul {
   nav li:nth-child(5) {
     order: 3;
   }
+
+  /* About */
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .about-img {
+    grid-column: span 6 / span 6;
+    grid-row: span 2 / span 2;
+    margin-bottom: 0;
+  }
+
+  .about-txt {
+    grid-column: span 6 / span 6;
+    grid-row: span 2 / span 2;
+    grid-column-start: 7;
+  }
+
+  /* About */
+
+  .about .resume {
+    display: inline-block;
+    margin: 0;
+  }
+
+  /* Services */
 
   .skills {
     display: grid;

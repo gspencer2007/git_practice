@@ -9,13 +9,13 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <!-- <script src="js/script.js" defer></script> -->
+    <script src="js/script.js" defer></script>
   </head>
 
   <body>
     <div class="header">
       <header class="wrapper">
-        <nav role="navigation">
+        <nav>
           <ul>
             <li><a href="index.html">GS</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -27,15 +27,17 @@
       </header>
     </div>
     <main>
-      <div class="wrapper">
-        <section class="hero">
-          <div class="hero-txt">
-            <h1>Creative Dreamer</h1>
-            <p>I'm not a run-of-the-mill designer. I build worlds.</p>
-            <a href="#services" class="button">Services</a> <a href="docs/GS_CV_2024.pdf" class="button hollow" target="_blank" download>Resume</a>
-          </div>
-        </section>
-        <section id="projects">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="mini-wrap hero-txt">
+          <h1>Creative Dreamer</h1>
+          <p>I'm not a run-of-the-mill designer. I build worlds.</p>
+          <a href="#services" class="button">Services</a> <a href="docs/GS_CV_2024.pdf" class="button hollow resume" target="_blank" download>Resume</a>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects">
+        <div class="wrapper">
           <h1>Projects I'm proud of</h1>
           <article>
             <div class="text">
@@ -60,7 +62,7 @@
                 This is a <a href="https://www.behance.net/gallery/200578507/Shades" target="_blank">creative illustration</a> of a photo of my friend of many years. I took this photo a while back. He
                 is such a character. This is one of the neatest photos I have taken as I dip my toes into photography.
               </p>
-              <h3>Technologies used include:</h3>
+              <h3>Programs used:</h3>
               <ul>
                 <li>Photoshop</li>
               </ul>
@@ -74,7 +76,7 @@
                 I designed the <a href="docs/Jackie_Program.pdf" target="_blank" download>obituary</a> for Aunt Jackie's passing. She was not my real aunt; it was what everyone called her. Aunt Jackie
                 used to drop her nephew, my best friend, and me off to school. She had a funny personality and was a caring person. She was loved by many. Rest in peace, Aunt Jackie, we miss you.
               </p>
-              <h3>Technologies used include:</h3>
+              <h3>Programs used:</h3>
               <ul>
                 <li>InDesign</li>
               </ul>
@@ -85,34 +87,40 @@
             <div class="text">
               <h2>Tokyo Punk</h2>
               <p class="blackbox">
-                This is me experimenting with typography and textures. I call it <a href="https://www.behance.net/gallery/200616149/Tokyo-Punk" target="_black">Tokyo Punk</a>. Tokyo is spray-painted
+                This is me experimenting with typography and textures. I call it <a href="https://www.behance.net/gallery/200616149/Tokyo-Punk" target="_blank">Tokyo Punk</a>. Tokyo is spray-painted
                 white on black leather with a splash of red underlining the word. This piece gives off the vibe that whoever spray-painted Tokyo over this piece of leather didn't care.
               </p>
-              <h3>Technologies used include:</h3>
+              <h3>Programs used:</h3>
               <ul>
                 <li>Photoshop</li>
               </ul>
             </div>
             <img src="img/jp_thumb.jpg" alt="Tokyo in grunge" />
           </article>
-        </section>
-        <div class="divider"></div>
-        <section id="about">
+          <div class="divider"></div>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about">
+        <div class="wrapper">
           <h1>Get to know me</h1>
           <div class="about">
             <img class="about-img" src="img/me_thumb.jpg" alt="Picture of myself" />
             <div class="about-txt">
               <h2>Just the highlights</h2>
               <p>
-                Geoffrey Spencer is a talented artist from Hyattsville, Maryland. During his studies, Geoffrey has improved his design skills and knowledge of the Adobe Creative Suite. He excels in
-                Illustrator, InDesign, and Photoshop. Presently, he is developing his expertise in web development to complement his understanding of design.
+                Geoffrey Spencer is a talented artist from Hyattsville, Maryland. During his studies, Geoffrey has improved his design skills and knowledge of the Adobe Creative Suite. Currently, he
+                is developing his expertise in web development to complement his understanding of design.
               </p>
-              <a href="docs/GS_CV_2024.pdf" class="button" target="_blank" download>Resume</a>
+              <a href="docs/GS_CV_2024.pdf" class="button resume" target="_blank" download>Resume</a>
             </div>
           </div>
-        </section>
-        <div class="divider"></div>
-        <section id="services">
+          <div class="divider"></div>
+        </div>
+      </section>
+      <!-- Services -->
+      <section id="services">
+        <div class="wrapper">
           <h1>What I offer</h1>
           <div class="skills">
             <div class="service branding">
@@ -150,15 +158,21 @@
               <p>If you are looking for a new website with a brand roll out, or need a refresher for your current website, I have experience in frontend web development.</p>
             </div>
           </div>
-        </section>
-        <div class="divider"></div>
-        <section id="contact">
+          <div class="divider"></div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="mini-wrap">
           <h1>Contact me</h1>
           <p>I'm always interested in hearing about your vision of how you want your site to look like.</p>
           <p><a href="mailto:gspencer2007@gmail.com" class="button">Email me</a></p>
-        </section>
-        <div class="divider"></div>
-        <footer id="footer">
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="wrapper">
+          <div class="divider"></div>
           <h2>Geoffrey Spencer &middot; Designer</h2>
           <ul>
             <!-- <li>
@@ -173,9 +187,9 @@
               <a href="mailto:gspencer2007@gmail.com"> <span class="fa-solid fa-envelope"></span><span class="sr-only">Email</span></a>
             </li>
           </ul>
-          <p><small>&copy; 2024 Geoffrey Spencer. All rights reserved.</small></p>
-        </footer>
-      </div>
+          <p><small class="copyright">&copy; 2024 Geoffrey Spencer. All rights reserved.</small></p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
