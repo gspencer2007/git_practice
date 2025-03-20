@@ -177,6 +177,7 @@ nav a {
   padding: 0.5rem;
   border-radius: 0.5rem;
   text-align: center;
+  transition: background-color 400ms ease-out;
   &:hover {
     background-color: var(--black);
     color: #e9d8a6;
@@ -239,12 +240,22 @@ nav a {
   font-size: 1rem;
 }
 
+#projects p {
+  position: relative;
+  z-index: 1;
+}
+
 #projects img {
   margin: 2rem 0 4rem 0;
   border-left: 1px solid var(--aqua);
   border-top: 1px solid var(--aqua);
   border-radius: 25px;
   padding: 1rem;
+  position: relative;
+  transition: transform 400ms ease-out;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 /*  About
@@ -437,6 +448,9 @@ footer p {
   .text {
     order: 2;
     text-align: right;
+    & p {
+      text-align: left;
+    }
   }
 
   #projects ul {
